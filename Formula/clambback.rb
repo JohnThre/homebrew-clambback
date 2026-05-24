@@ -35,6 +35,6 @@ class Clambback < Formula
   end
 
   test do
-    assert_match "Welcome to clambback 0.1.0", shell_output("#{bin}/clambback --version")
+    assert_match "Welcome to clambback 0.1.0", shell_output("#{bin}/clambback --version 2>&1")
   end
 end
